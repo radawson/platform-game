@@ -2,7 +2,7 @@ body {
     background-color: rgb(182, 135, 226);
 }
 
-header > h1 {
+header > h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 3em;
