@@ -115,7 +115,7 @@ function loop() {
     // Updating the y and x coordinates of the player
     player.y += player.y_v;
     player.x += player.x_v;
-    // A simple code that checks for collions with the platform
+    // A simple code that checks for collisions with the platform
     let i = -1;
     if(platforms[0].x < player.x && player.x < platforms[0].x + platforms[0].width &&
     platforms[0].y < player.y && player.y < platforms[0].y + platforms[0].height){
