@@ -96,37 +96,38 @@ var movementGravity = 0.6;
 var movementFriction = 0.7;
 
 function keydown(e) {
+    console.log("got key:",e);
     // Left arrow
-    if (e.keycode == 37) {
+    if (e.keyCode == 37) {
         keysCurrent.left = true;
         console.log('left')
     }
     // Up arrow
-    if (e.keycode == 38) {
-        if (playerInfo.jump == false) {
+    if (e.keyCode == 38) {
+        if (playerInfo.jumping == false) {
             playerInfo.yVelocity = -5;
             console.log('jump')
         }
     }
     // Right arrow
-    if (e.keycode == 39) {
+    if (e.keyCode == 39) {
         keysCurrent.right = true;
         console.log('right')
     }
 }
 
 function keyup(e){
-    if (e.keycode == 37) {
+    if (e.keyCode == 37) {
         keysCurrent.left = false;
         console.log('left')
     }
-    if (e.keycode == 38) {
+    if (e.keyCode == 38) {
         if (playerInfo.yVelocity < -1) {
             playerInfo.yVelocity = -3;
             console.log('jump')
         }
     }
-    if (e.keycode == 39) {
+    if (e.keyCode == 39) {
         keysCurrent.right = false;
         console.log('right')
     }
